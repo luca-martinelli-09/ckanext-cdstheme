@@ -1,0 +1,14 @@
+# cdstheme-js:
+#   filter: rjsmin
+#   output: ckanext-cdstheme/%(version)s-cdstheme.js
+#   contents:
+#     - js/cdstheme.js
+#   extra:
+#     preload:
+#       - base/main
+
+# cdstheme-css:
+#   filter: cssrewrite
+#   output: ckanext-cdstheme/%(version)s-cdstheme.css
+#   contents:
+#     - css/cdstheme.css
