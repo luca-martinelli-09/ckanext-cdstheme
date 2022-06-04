@@ -9,3 +9,25 @@
 .control-group {
   margin-bottom: 30px;
 }
+
+.site-footer, .site-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-brand img {
+    width: auto;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.footer-brand h2 {
+    margin: 0px;
+}
+
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
