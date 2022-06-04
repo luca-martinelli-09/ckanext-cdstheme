@@ -1,6 +1,6 @@
 {% ckan_extends %}
 
-{% block styles %}
-{{ super() }}
+{% block head_extras %}
+  {{ super() }}
+  <link rel="stylesheet" href="/cds_main.css" />
 {% endblock %}
-<link rel="stylesheet" href="/cds_main.css" />
