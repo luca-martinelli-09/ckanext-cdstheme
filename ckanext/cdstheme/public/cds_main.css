@@ -1,3 +1,7 @@
 .dataset-resources {
   padding: 0;
 }
+
+.control-group {
+  margin-bottom: 30px;
+}
