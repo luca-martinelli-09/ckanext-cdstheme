@@ -2,22 +2,24 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <a href="https://comune.sona.vr.it/home" title="Homepage" class="footer-brand"><img
-            src="https://bussola.s3.eu-west-1.amazonaws.com/214162/sona.png" alt="Stemma" class="stemma">
-            <div>
+        <div class="footer-brand">
+          <img src="https://bussola.s3.eu-west-1.amazonaws.com/214162/sona.png" alt="Stemma" class="stemma">
+          <div>
+            <a href="https://comune.sona.vr.it/" target="_blank" rel="noopener noreferrer">
               <h2>Comune di Sona</h2>
-              <p>
-                P.IVA/C.F. {{ h.get_organization.identifier }}
-              </p>
-            </div>
-        </a>
+            </a>
+            <p>
+              P.IVA/C.F. {{ h.get_dcatapit_organization_schema.identifier }}
+            </p>
+          </div>
+        </div>
       </div>
       <div class="col-md-4">
         <p><strong>Maintained by </strong><a href="https://lucamartinelli.eu.org" target="_blank"
             rel="noopener noreferrer">Luca
             Martinelli</a></p>
         {% block footer_lang %}
-          {% snippet "snippets/language_selector.html" %}
+        {% snippet "snippets/language_selector.html" %}
         {% endblock %}
       </div>
     </div>
