@@ -1,6 +1,9 @@
-{% ckan_extends %}
-
-{% block footer_attribution %}
-  {{ super() }}
-  <p><strong>Maintained by</strong> <a href="https://lucamartinelli.eu.org">Luca Martinelli</a></p>
-{% endblock %}
+<footer class="site-footer">
+  <div class="container">
+    
+    <p><strong>Maintained by </strong><a href="https://lucamartinelli.eu.org" target="_blank" rel="noopener noreferrer">Luca Martinelli</a></p>
+    {% block footer_lang %}
+      {% snippet "snippets/language_selector.html" %}
+    {% endblock %}
+  </div>
+</footer>
