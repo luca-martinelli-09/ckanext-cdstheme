@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
 .main {
   background: #fff;
 }
@@ -18,7 +24,7 @@
 .footer-brand img {
     width: auto;
     height: 70px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .footer-brand h2 {
