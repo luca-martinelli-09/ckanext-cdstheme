@@ -3,13 +3,13 @@
     <div class="row">
       <div class="col-md-8">
         <div class="footer-brand">
-          <img src="https://bussola.s3.eu-west-1.amazonaws.com/214162/sona.png" alt="Stemma" class="stemma">
+          <img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="Stemma" class="stemma">
           <div>
             <a href="https://comune.sona.vr.it/" target="_blank" rel="noopener noreferrer">
-              <h2>{{ c.dcatapit_configpublisher_name }}</h2>
+              <h2>{{ g.dcatapit_configpublisher_name }}</h2>
             </a>
             <p>
-              P.IVA/C.F. {{ c.dcatapit_configpublisher_code_identifier }}
+              P.IVA/C.F. {{ g.dcatapit_configpublisher_code_identifier }}
             </p>
           </div>
         </div>
