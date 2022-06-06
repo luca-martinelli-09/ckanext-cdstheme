@@ -174,7 +174,7 @@ body {
 }
 
 .account-masthead .account ul li a {
-    color: #ffe9df;
+    color: #ffe9df !important;
 }
 
 .toolbar .breadcrumb a {
