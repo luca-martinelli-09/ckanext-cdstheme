@@ -194,7 +194,7 @@ body {
   box-shadow: none;
 }
 
-.page-header {
+.media-grid, .page-header {
   background: none;
   border: none;
 }
