@@ -69,6 +69,9 @@ body {
   align-items: center;
   margin: 0px;
   letter-spacing: 0px;
+}
+
+.masthead hgroup h1 a {
   text-decoration: none !important;
 }
 
