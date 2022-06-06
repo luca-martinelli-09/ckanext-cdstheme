@@ -46,8 +46,8 @@ body {
 }
 
 .masthead .logo img {
-  max-height: 80px;
-  margin-right: 20px;
+  max-height: 70px;
+  margin-right: 10px;
 }
 
 .masthead .container {
@@ -61,7 +61,7 @@ body {
 
 .navbar-right {
   font-size: 30px;
-  margin: 0px;
+  margin: 0px 20px 0px 0px;
 }
 
 .masthead hgroup h1 {
