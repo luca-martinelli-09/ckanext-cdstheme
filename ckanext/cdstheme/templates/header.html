@@ -5,26 +5,18 @@
   {% endif %} {% endblock %}
 
   <div class="container">
-    <div class="navbar-right">
-      <button data-target="#main-navigation-toggle" data-toggle="collapse" class="navbar-toggle collapsed" type="button"
-        aria-label="expand or collapse" aria-expanded="false">
-        <span class="sr-only">{{ _('Toggle navigation') }}</span>
-        <span class="fa fa-bars"></span>
-      </button>
-    </div>
-    
     <hgroup class="{{ g.header_class }} navbar-left">
       {% block header_logo %}
       {% if g.site_logo %}
       <h1>
         <a class="logo" href="{{ h.url_for('home.index') }}">
           <img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="{{ g.site_title }}" title="{{ g.site_title }}" />
-          {{ g.site_title }}
+          <span>{{ g.site_title }}</span>
         </a>
       </h1>
       {% else %}
       <h1>
-        <a href="{{ h.url_for('home.index') }}">{{ g.site_title }}</a>
+        <a href="{{ h.url_for('home.index') }}"><span>{{ g.site_title }}</span></a>
       </h1>
       {% endif %}
       {% endblock %}
@@ -45,6 +37,14 @@
         </ul>
       </nav>
       {% endblock %}
+    </div>
+
+    <div class="navbar-right">
+      <button data-target="#main-navigation-toggle" data-toggle="collapse" class="navbar-toggle collapsed" type="button"
+        aria-label="expand or collapse" aria-expanded="false">
+        <span class="sr-only">{{ _('Toggle navigation') }}</span>
+        <span class="fa fa-bars"></span>
+      </button>
     </div>
   </div>
 </header>

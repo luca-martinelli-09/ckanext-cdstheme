@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .main {
@@ -16,29 +16,136 @@ body {
   margin-bottom: 30px;
 }
 
-.site-footer, .site-footer a, .site-footer label {
-    color: #fff;
-    text-decoration: none;
+.site-footer,
+.site-footer a,
+.site-footer label {
+  color: #fff;
+  text-decoration: none;
 }
 
 .site-footer {
-  background: #4F091D;
+  background: #4f091d;
   margin-top: 30px;
 }
 
 .footer-brand img {
-    width: auto;
-    height: 70px;
-    margin-right: 20px;
+  width: auto;
+  height: 70px;
+  margin-right: 20px;
 }
 
 .footer-brand h2 {
-    margin: 0px;
+  margin: 0px;
 }
 
-
 .footer-brand {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.masthead .logo img {
+  max-height: 80px;
+  margin-right: 20px;
+}
+
+.masthead .container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-right {
+  font-size: 30px;
+  margin: 0px;
+}
+
+.masthead hgroup h1 {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  letter-spacing: 0px;
+}
+
+.masthead {
+  background: #f15c1c;
+  padding: 20px 0px;
+}
+
+.account-masthead {
+  background: #3a0715;
+}
+
+.account-masthead .account ul li {
+  border: none;
+}
+
+.account-masthead .account ul li a:hover {
+  background: #4f091d;
+}
+
+.masthead .nav > li > a,
+.masthead .nav > li > a:focus,
+.masthead .nav > li > a:hover,
+.masthead .nav > .active > a,
+.masthead .nav > .active > a:hover,
+.masthead .nav > .active > a:focus {
+  font-size: 20px;
+}
+
+.masthead .navigation .nav-pills li a:hover,
+.masthead .navigation .nav-pills li a:focus,
+.masthead .navigation .nav-pills li.active a {
+  background: none;
+}
+
+@media (max-width: 991px) {
+  .navbar-left .logo span {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-left .logo span {
+    display: inline-block;
+  }
+
+  .masthead .navbar-collapse {
+    height: 100vh !important;
+    display: block !important;
+    position: fixed;
+    margin: 0px !important;
+    top: 0 !important;
+    left: -100vw;
+    bottom: 0 !important;
+    background: #fff;
+    width: calc(100vw - 75px);
+    box-shadow: 5px 0px 30px rgb(0 0 0 / 30%);
+    transition: 300ms ease left;
+    transform: none !important;
+  }
+
+  .masthead .nav > li > a,
+  .masthead .nav > li > a:focus,
+  .masthead .nav > li > a:hover,
+  .masthead .nav > .active > a,
+  .masthead .nav > .active > a:hover,
+  .masthead .nav > .active > a:focus {
+    color: #4f091d;
+    font-size: 20px;
+  }
+
+  .masthead .navbar-collapse[aria-expanded="true"] {
+    left: 0;
+  }
+
+  .masthead .navigation .nav-pills li a:hover,
+  .masthead .navigation .nav-pills li a:focus,
+  .masthead .navigation .nav-pills li.active a {
+    background: none;
+    color: #f15c1c;
+  }
 }
