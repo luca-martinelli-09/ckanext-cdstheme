@@ -88,19 +88,19 @@ body {
   background: #4f091d;
 }
 
-.masthead .nav > li > a,
-.masthead .nav > li > a:focus,
-.masthead .nav > li > a:hover,
-.masthead .nav > .active > a,
-.masthead .nav > .active > a:hover,
-.masthead .nav > .active > a:focus {
+.masthead .nav > li > a {
   font-size: 20px;
 }
 
 .masthead .navigation .nav-pills li a:hover,
-.masthead .navigation .nav-pills li a:focus,
+.masthead .navigation .nav-pills li a:focus {
+  background: none;
+  text-decoration: underline;
+}
+
 .masthead .navigation .nav-pills li.active a {
   background: none;
+  font-weight: bold;
 }
 
 @media (max-width: 991px) {
@@ -129,12 +129,7 @@ body {
     transform: none !important;
   }
 
-  .masthead .nav > li > a,
-  .masthead .nav > li > a:focus,
-  .masthead .nav > li > a:hover,
-  .masthead .nav > .active > a,
-  .masthead .nav > .active > a:hover,
-  .masthead .nav > .active > a:focus {
+  .masthead .nav > li > a {
     color: #4f091d;
     font-size: 20px;
   }
@@ -148,5 +143,6 @@ body {
   .masthead .navigation .nav-pills li.active a {
     background: none;
     color: #f15c1c;
+    text-decoration: none;
   }
 }
