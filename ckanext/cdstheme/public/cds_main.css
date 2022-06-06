@@ -269,6 +269,12 @@ body {
   padding: 15px;
 }
 
+@media (max-width: 992px) {
+  .group-tiles {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 768px) {
   .section-title .button {
     display: none;
@@ -276,12 +282,6 @@ body {
 
   .group-tiles {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 992px) {
-  .group-tiles {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

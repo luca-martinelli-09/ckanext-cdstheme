@@ -21,12 +21,6 @@
   max-width: 750px;
 }
 
-@media (max-width: 768px) {
-  .hero > .container {
-    flex: 1;
-  }
-}
-
 .hero h2 {
   color: #fff;
   font-size: 60px;
@@ -38,6 +32,16 @@
   border: none;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 768px) {
+  .hero > .container {
+    flex: 1;
+  }
+
+  .hero h2 {
+    font-size: 50px;
+  }
 }
 
 .search-form .search-input.search-giant input {
