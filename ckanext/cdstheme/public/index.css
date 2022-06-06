@@ -157,10 +157,10 @@
   display: block;
   padding: 7px 30px;
   margin: 0;
-  color: #fff;
+  color: #fff !important;
   background: #f15c1c;
   text-transform: uppercase;
-  text-decoration: none;
+  text-decoration: none !important;
   font-weight: bold;
   font-size: 17px;
 }
