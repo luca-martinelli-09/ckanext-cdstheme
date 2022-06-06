@@ -34,14 +34,14 @@
   padding: 0;
 }
 
-.hero .search-form input {
+.search-form .search-input.search-giant input {
   border-radius: 0px;
   border: none;
   padding: 20px 80px 20px 30px;
   box-shadow: none;
 }
 
-.hero i.fa.fa-search {
+.search-form .search-input.search-giant button i {
   color: #000;
   font-size: 20px;
   width: 20px;
@@ -52,24 +52,24 @@
   align-items: center;
 }
 
-.hero .search-input button {
+.search-form .search-input.search-giant button {
   margin-top: -10px;
   right: 30px;
 }
 
 .hero {
-    position: relative;
+  position: relative;
 }
 
 .hero-bg {
-    background: rgb(0 0 0 / 40%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  background: rgb(0 0 0 / 40%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .hero > .container {
-    z-index: 1;
+  z-index: 1;
 }
