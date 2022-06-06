@@ -5,6 +5,7 @@
   {% block header_debug %} {% if g.debug and not g.debug_supress_header %}
   <div class="debug">Blueprint : {{ g.blueprint }}<br />View : {{ g.view }}</div>
   {% endif %} {% endblock %}
+  
   <div class="container">
     <hgroup class="{{ g.header_class }} navbar-left">
       {% block header_logo %}
@@ -20,8 +21,8 @@
       <h1>
         <a href="{{ h.url_for('home.index') }}">{{ g.site_title }}</a>
       </h1>
-      {% if g.site_description %}
-      <h2>{{ g.site_description }}</h2>{% endif %} {% endif %} {% endblock %}
+      {% endif %}
+      {% endblock %}
     </hgroup>
 
     <div class="collapse navbar-collapse" id="main-navigation-toggle">
@@ -43,6 +44,7 @@
           {% endblock %}
         </ul>
       </nav>
+      {% endblock %}
     </div>
 
     <div class="navbar-right">
