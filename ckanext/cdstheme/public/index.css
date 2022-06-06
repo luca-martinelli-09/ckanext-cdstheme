@@ -12,9 +12,6 @@
   background: url(/base/images/header_background.jpg);
   background-size: cover;
   position: relative;
-  -moz-box-shadow: inset 0px 100px 90px hwb(0deg 0% 100% / 60%);
-  -webkit-box-shadow: inset 0px 100px 90px hwb(0deg 0% 100% / 60%);
-  box-shadow: inset 0px 100px 90px hwb(0deg 0% 100% / 60%);
   display: flex;
   align-items: center;
 }
@@ -25,11 +22,55 @@
   }
 }
 
-.shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 0%));
+.hero h2 {
+  color: #fff;
+  font-size: 60px;
+  margin: 0px 0px 30px 0px;
+}
+
+.hero .search-form {
+  text-align: center;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero .search-form input {
+  border-radius: 0px;
+  border: none;
+  padding: 20px 80px 20px 30px;
+  box-shadow: none;
+}
+
+.hero i.fa.fa-search {
+  color: #000;
+  font-size: 20px;
+  width: 20px;
+}
+
+.hero .search-input {
+  display: flex;
+  align-items: center;
+}
+
+.hero .search-input button {
+  margin-top: -10px;
+  right: 30px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-bg {
+    background: rgb(0 0 0 / 30%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hero > .container {
+    z-index: 1;
 }
