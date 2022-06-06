@@ -13,7 +13,6 @@
   background-size: cover;
   position: relative;
   display: flex;
-  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -63,7 +62,7 @@
 }
 
 .hero-bg {
-    background: rgb(0 0 0 / 30%);
+    background: rgb(0 0 0 / 40%);
     position: absolute;
     top: 0;
     left: 0;
