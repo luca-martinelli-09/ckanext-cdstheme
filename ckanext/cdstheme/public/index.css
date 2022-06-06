@@ -135,7 +135,9 @@
 }
 
 .group-card img {
+  max-height: 150px;
   width: 100%;
+  object-fit: contain;
   border-radius: 0;
 }
 
