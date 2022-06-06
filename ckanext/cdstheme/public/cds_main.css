@@ -79,6 +79,7 @@ body {
   z-index: 2;
   background: #f15c1c;
   padding: 20px 0px;
+  box-shadow: 0px -10px 40px rgb(0 0 0 / 50%);
 }
 
 .account-masthead {
