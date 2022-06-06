@@ -137,6 +137,7 @@ body {
 @media (max-width: 767px) {
   .navbar-left .logo span {
     display: inline-block;
+    font-size: 25px;
   }
 
   .masthead .navbar-collapse {
