@@ -194,33 +194,37 @@ body {
   box-shadow: none;
 }
 
-.media-grid, .page-header {
+.media-grid,
+.page-header {
   background: none;
   border: none;
 }
 
 .nav > li > a {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.nav-item.active > a, .nav-aside li.active a {
-    background: #4f091d;
+.nav-item.active > a,
+.nav-aside li.active a {
+  background: #e3571a;
 }
 
-.nav-item.active > a:before, .nav-aside li.active a:before {
-    display: none;
+.nav-item.active > a:before,
+.nav-aside li.active a:before {
+  display: none;
 }
 
 .active .badge {
-    background: #fff;
-    color: #000;
+  background: #fff;
+  color: #000;
 }
 
 .badge {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
-.nav-item.active > a:hover, .nav-aside li.active a:hover {
-    background: #3a0715;
+.nav-item.active > a:hover,
+.nav-aside li.active a:hover {
+  background: #ff5d19;
 }
