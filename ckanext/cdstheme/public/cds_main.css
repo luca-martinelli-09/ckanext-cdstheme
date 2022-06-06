@@ -197,6 +197,9 @@ body {
 .media-grid,
 .page-header {
   background: none;
+}
+
+.media-grid {
   border: none;
 }
 
