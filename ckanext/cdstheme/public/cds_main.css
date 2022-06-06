@@ -266,6 +266,7 @@ body {
   width: 100%;
   object-fit: contain;
   border-radius: 0;
+  padding: 15px;
 }
 
 @media (max-width: 768px) {
