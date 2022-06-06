@@ -16,9 +16,14 @@ body {
   margin-bottom: 30px;
 }
 
-.site-footer, .site-footer a {
+.site-footer, .site-footer a, .site-footer label {
     color: #fff;
     text-decoration: none;
+}
+
+.site-footer {
+  background: #4F091D;
+  margin-top: 30px;
 }
 
 .footer-brand img {

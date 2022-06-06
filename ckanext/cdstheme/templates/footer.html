@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-8">
         <div class="footer-brand">
-          <img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="Stemma" class="stemma">
+          <img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="Comune di Sona">
           <div>
             <a href="https://comune.sona.vr.it/" target="_blank" rel="noopener noreferrer">
               <h2>{{ g.site_title }}</h2>
@@ -16,17 +16,89 @@
         </div>
       </div>
       <div class="col-md-4">
-        <p><strong>Maintained by</strong> <a href="https://lucamartinelli.eu.org" target="_blank"
-            rel="noopener noreferrer">Luca
-            Martinelli</a></p>
         <p>
-          <strong>Powered by</strong> <a href="https://github.com/luca-martinelli-09/ckan" target="_blank" rel="noopener noreferrer">CKAN</a><br />
-          <strong>Theme by</strong> <a href="https://github.com/luca-martinelli-09/ckanext-cdstheme" target="_blank" rel="noopener noreferrer">Luca Martinelli</a>
+          <strong>Maintained by</strong> <a href="https://lucamartinelli.eu.org" target="_blank"
+            rel="noopener noreferrer">
+            Luca Martinelli</a>
         </p>
-        {% block footer_lang %}
+        <p>
+          <strong>Powered by</strong> <a href="https://github.com/luca-martinelli-09/ckan" target="_blank"
+            rel="noopener noreferrer">CKAN</a><br />
+          <strong>Theme by</strong> <a href="https://github.com/luca-martinelli-09/ckanext-cdstheme" target="_blank"
+            rel="noopener noreferrer">Luca Martinelli</a>
+        </p>
         {% snippet "snippets/language_selector.html" %}
-        {% endblock %}
       </div>
     </div>
   </div>
 </footer>
+
+<div class="account-masthead">
+  <div class="container">
+    {% if c.userobj %}
+    <div class="account avatar authed" data-module="me" data-me="{{ c.userobj.id }}">
+      <ul class="list-unstyled">
+        {% block header_account_logged %}
+        
+        {% if c.userobj.sysadmin %}
+        <li>
+          <a href="{{ h.url_for('admin.index') }}" title="{{ _('Sysadmin settings') }}">
+            <i class="fa fa-gavel" aria-hidden="true"></i>
+            <span class="text">{{ _('Admin') }}</span>
+          </a>
+        </li>
+        {% endif %}
+
+        {% block header_account_profile %}
+        <li>
+          <a href="{{ h.url_for('user.read', id=c.userobj.name) }}" class="image" title="{{ _('View profile') }}">
+            {{ h.user_image((c.user if c and c.user else ''), size=22) }}
+            <span class="username">{{ c.userobj.display_name }}</span>
+          </a>
+        </li>
+        {% endblock %}
+
+        {% block header_dashboard %}
+        <li>
+          <a href="{{ h.url_for('dashboard.datasets') }}" title="{{ _(" View dashboard") }}">
+            <i class="fa fa-tachometer" aria-hidden="true"></i>
+            <span class="text">{{ _('Dashboard') }}</span>
+          </a>
+        </li>
+        {% endblock %}
+
+        {% block header_account_settings_link %}
+        <li>
+          <a href="{{ h.url_for('user.edit', id=c.userobj.name) }}" title="{{ _('Profile settings') }}">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <span class="text">{{ _('Profile settings') }}</span>
+          </a>
+        </li>
+        {% endblock %}
+        
+        {% block header_account_log_out_link %}
+        <li>
+          <a href="{{ h.url_for('user.logout') }}" title="{{ _('Log out') }}">
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+            <span class="text">{{ _('Log out') }}</span>
+          </a>
+        </li>
+        {% endblock %}
+        
+        {% endblock %}
+      </ul>
+    </div>
+    
+    {% else %}
+    
+    <nav class="account not-authed" aria-label="{{ _('Account') }}">
+      <ul class="list-unstyled">
+        {% block header_account_notlogged %}
+        <li>{% link_for _('Log in'), named_route='user.login' %}</li>
+        {% endblock %}
+      </ul>
+    </nav>
+    
+    {% endif %}
+  </div>
+</div>
