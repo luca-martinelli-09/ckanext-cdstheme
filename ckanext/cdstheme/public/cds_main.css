@@ -207,7 +207,7 @@ body {
 
 .nav-item.active > a,
 .nav-aside li.active a {
-  background: #e3571a;
+  background: #ff5d19 !important;
 }
 
 .nav-item.active > a:before,
@@ -226,5 +226,5 @@ body {
 
 .nav-item.active > a:hover,
 .nav-aside li.active a:hover {
-  background: #ff5d19;
+  background: #e3571a !important;
 }
