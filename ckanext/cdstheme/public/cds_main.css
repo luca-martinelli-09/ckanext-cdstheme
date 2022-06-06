@@ -290,5 +290,5 @@ body {
 }
 
 .select2-container {
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
 }
