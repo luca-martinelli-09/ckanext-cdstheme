@@ -173,6 +173,10 @@ body {
   }
 }
 
+.account-masthead .account ul li a {
+    color: #ffe9df;
+}
+
 .toolbar .breadcrumb a {
   color: #505050;
 }
