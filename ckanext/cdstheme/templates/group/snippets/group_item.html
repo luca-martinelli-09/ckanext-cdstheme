@@ -4,9 +4,8 @@
 <div class="group-card">
   <img src="{{ group.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}"
     alt="{{ group.name }}">
-  <h3>{{ group.title }}</h3>
-  <input name="group_remove.{{ group.id }}" value="{{ _('Remove') }}" type="submit"
-    class="btn btn-danger btn-sm media-edit" title="{{ _('Remove dataset from this group') }}" />
+  <h3>{{ group.title }}<input name="group_remove.{{ group.id }}" value="{{ _('Remove') }}" type="submit"
+      class="btn btn-danger btn-sm media-edit" title="{{ _('Remove dataset from this group') }}" /></h3>
 </div>
 {% else %}
 <a class="group-card" href="{{ h.url_for(controller='group', action='read', id=group.name) }}">

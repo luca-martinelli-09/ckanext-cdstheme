@@ -284,3 +284,11 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+.group-card h3 input {
+    margin-left: 10px;
+}
+
+.select2-container {
+    margin-bottom: 15px;
+}
