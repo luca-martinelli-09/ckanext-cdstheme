@@ -1,0 +1,5 @@
+<div class="group-tiles">
+  {% for organization in organizations %}
+  {% snippet "organization/snippets/organization_item.html", organization=organization %}
+  {% endfor %}
+</div>

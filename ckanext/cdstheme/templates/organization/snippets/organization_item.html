@@ -1,0 +1,7 @@
+{% block organization_item %}
+<a class="group-card" href="{{ h.url_for(organization.type ~ '.read', id=organization.name) }}">
+  <img src="{{ organization.image_display_url or h.url_for_static('/base/images/placeholder-organization.png') }}"
+    alt="{{ organization.name }}">
+  <h3>{{ organization.display_name }}</h3>
+</a>
+{% endblock %}
