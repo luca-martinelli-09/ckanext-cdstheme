@@ -206,7 +206,7 @@ body {
 }
 
 .nav-item.active > a:before, .nav-aside li.active a:before {
-    border-left-color: #4f091d;
+    display: none;
 }
 
 .active .badge {
@@ -219,5 +219,5 @@ body {
 }
 
 .nav-item.active > a:hover, .nav-aside li.active a:hover {
-    display: none;
+    background: #3a0715;
 }
