@@ -1,4 +1,9 @@
 {% block header_wrapper %}
+
+<a class="close-navbar-toggler collapsed" data-toggle="collapse" data-target="#main-navigation-toggle"
+  aria-controls="main-navigation-toggle" aria-expanded="false" aria-label="Toggle navigation">
+</a>
+
 <header class="navbar navbar-static-top masthead">
   {% block header_debug %} {% if g.debug and not g.debug_supress_header %}
   <div class="debug">Controller : {{ c.controller }}<br />Action : {{ c.action }}</div>
@@ -10,7 +15,8 @@
       {% if g.site_logo %}
       <h1>
         <a class="logo" href="{{ h.url_for('home.index') }}">
-          <img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="{{ g.site_title }}" title="{{ g.site_title }}" />
+          <img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="{{ g.site_title }}"
+            title="{{ g.site_title }}" />
           <span>{{ g.site_title }}</span>
         </a>
       </h1>
@@ -27,12 +33,12 @@
       <nav class="section navigation">
         <ul class="nav nav-pills">
           {% block header_site_navigation_tabs %}
-            {{ h.build_nav_main(
-                ('dataset.search', _('Datasets')),
-                ('organization.index', _('Organizations')),
-                ('group.index', _('Groups')),
-                ('home.about', _('About')) )
-            }}
+          {{ h.build_nav_main(
+          ('dataset.search', _('Datasets')),
+          ('organization.index', _('Organizations')),
+          ('group.index', _('Groups')),
+          ('home.about', _('About')) )
+          }}
           {% endblock %}
         </ul>
       </nav>
@@ -41,7 +47,7 @@
 
     <div class="navbar-right">
       <button data-target="#main-navigation-toggle" data-toggle="collapse" class="navbar-toggle collapsed" type="button"
-        aria-label="expand or collapse" aria-expanded="false">
+        aria-controls="main-navigation-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span class="sr-only">{{ _('Toggle navigation') }}</span>
         <span class="fa fa-bars"></span>
       </button>
