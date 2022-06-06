@@ -1,0 +1,32 @@
+.masthead {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+}
+
+.hero {
+    padding-top: 150px !important;
+    min-height: 80vh;
+    background: url(/base/images/header_background.jpg);
+    background-size: cover;
+    position: relative;
+    -moz-box-shadow: inset 0px 100px 90px hwb(0deg 0% 100% / 60%);
+    -webkit-box-shadow: inset 0px 100px 90px hwb(0deg 0% 100% / 60%);
+    box-shadow: inset 0px 100px 90px hwb(0deg 0% 100% / 60%);
+    display: flex;
+    align-items: center;
+}
+
+.hero > .container {
+  flex: 1;
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 0%));
+}
