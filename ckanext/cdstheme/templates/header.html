@@ -1,9 +1,5 @@
 {% block header_wrapper %}
 
-<a class="close-navbar-toggler collapsed" data-toggle="collapse" data-target="#main-navigation-toggle"
-  aria-controls="main-navigation-toggle" aria-expanded="false" aria-label="Toggle navigation">
-</a>
-
 <header class="navbar navbar-static-top masthead">
   {% block header_debug %} {% if g.debug and not g.debug_supress_header %}
   <div class="debug">Controller : {{ c.controller }}<br />Action : {{ c.action }}</div>
@@ -37,6 +33,10 @@
     </hgroup>
 
     <div class="collapse navbar-collapse" id="main-navigation-toggle">
+      <a class="close-navbar-toggler collapsed" data-toggle="collapse" data-target="#main-navigation-toggle"
+        aria-controls="main-navigation-toggle" aria-expanded="false" aria-label="Toggle navigation">
+      </a>
+      
       {% block header_site_navigation %}
       <nav class="section navigation">
         <ul class="nav nav-pills">

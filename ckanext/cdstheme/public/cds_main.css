@@ -76,6 +76,7 @@ body {
 }
 
 .masthead {
+  z-index: 2;
   background: #f15c1c;
   padding: 20px 0px;
 }
@@ -108,16 +109,17 @@ body {
 }
 
 .navigation {
-  z-index: 3;
+  position: relative;
+  z-index: 2;
 }
 
 .close-navbar-toggler {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 2;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
   cursor: pointer;
 }
 
