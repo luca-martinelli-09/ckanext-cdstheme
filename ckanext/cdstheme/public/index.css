@@ -65,6 +65,7 @@
 
 .hero-bg {
   background: rgb(0 0 0 / 40%);
+  background-image: linear-gradient(rgb(0 0 0 / 40%), transparent);
   position: absolute;
   top: 0;
   left: 0;
