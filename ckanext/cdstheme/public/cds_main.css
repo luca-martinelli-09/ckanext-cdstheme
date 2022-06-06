@@ -198,3 +198,26 @@ body {
   background: none;
   border: none;
 }
+
+.nav-item.active > a, .nav-aside li.active a {
+    background: #4f091d;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item.active > a:before, .nav-aside li.active a:before {
+    border-left-color: #4f091d;
+}
+
+.active .badge {
+    background: #fff;
+    color: #000;
+}
+
+.badge {
+    margin-left: 10px;
+}
+
+.nav-item.active > a:hover, .nav-aside li.active a:hover {
+    display: none;
+}
